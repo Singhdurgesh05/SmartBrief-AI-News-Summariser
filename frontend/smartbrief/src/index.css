@@ -1,0 +1,121 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-bg: #121826;
+  --color-dark-card: #1e293b;
+  --color-dark-border: #334155;
+  --color-primary: #4361ee;
+  --color-light-border: #e5e7eb;
+  --color-sentiment-positive: #10b981;
+  --color-sentiment-negative: #ef4444;
+  --color-sentiment-neutral: #6b7280;
+}
+
+/* Global Styles */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9fafb;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: rgb(37 99 235);
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: rgb(29 78 216);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background-color: rgb(243 244 246);
+  color: rgb(55 65 81);
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  border: 1px solid rgb(229 231 235);
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: rgb(229 231 235);
+}
+
+.btn-icon {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(107 114 128);
+}
+
+.btn-icon:hover {
+  background-color: rgb(243 244 246);
+  color: rgb(55 65 81);
+}
+
+/* Card Styles */
+.app-card {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: all 0.3s;
+  border: 1px solid rgb(229 231 235);
+}
+
+.app-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+/* Dark Card Styles for Dashboard */
+.app-card-dark {
+  background: linear-gradient(135deg, rgba(55, 48, 107, 0.4) 0%, rgba(30, 27, 75, 0.4) 100%);
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(139, 92, 246, 0.1);
+  transition: all 0.3s;
+}
+
+.app-card-dark:hover {
+  border-color: rgba(139, 92, 246, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Utility Classes */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
