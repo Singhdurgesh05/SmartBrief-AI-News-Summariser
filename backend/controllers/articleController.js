@@ -1,5 +1,5 @@
 const axios = require('axios');
-const Article = require('../models/article'); // Corrected import (lowercase 'a')
+const Article = require('../models/Article.js'); // Corrected import (lowercase 'a')
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 // Init GenAI - Using the correct key and initialization
