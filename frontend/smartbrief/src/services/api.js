@@ -1,7 +1,9 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: '/api', // it will prepend /api to all requests
+  baseURL: import.meta.env.PROD
+    ? 'https://smartbrief-ai-news-summariser-1.onrender.com/api'
+    : '/api', // Use full URL in production, proxy in development
   headers: {
     'Content-Type': 'application/json',
   },
